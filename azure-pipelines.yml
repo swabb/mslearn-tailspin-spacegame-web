@@ -17,5 +17,5 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- script: export NEWSECRET=$(newSecretVar) && echo "env.NEWSECRET = $(NEWSECRET)"
+- script: export NEWSECRET=$(newSecretVar) && echo "env.NEWSECRET = $NEWSECRET"
   displayName: 'Testing secret variable'
